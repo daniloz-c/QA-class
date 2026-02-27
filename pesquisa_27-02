@@ -1,0 +1,17 @@
+- CARACTERISTICAS DE UM TESTER ÁGIL:
+  O Testador da metodologia ágil está presente em todas as fases do desenvolvimento do sistema.
+  - Análise
+  - Desenvolvimento
+  - Testes
+  - Build/deploy
+  Porque? Para justamente prevenir bugs e más práticas no decorrer do desenvolvimento. Então o Testador tem que entender cada
+  processo do desenvolvimento e pois ele tem que ter a regra de negócio do projeto na palma da mão. Monitorar possíveis problemas
+  no desenvolvimento, desenvolver o teste e documentar o que achar de problema quando executar os testes(documentar é essencial para 
+  o testador ágil), Gerar um relatório, pode ser uma planilha.
+
+  resumindo:
+  O testador tradicional vai atuar no momento em que equipe achar adequado para testar o sistema. 
+
+- CODE REVIEW: QUANDO FAZ SENTIDO E QUANDO NÃO?
+  Não faz sentido se passar de 15 minutos de revisão do código. As sessões não devem transmitir uma ansiedade ou preocupação do autor pois não
+  é uma avaliação da capacidade do autor. Revisor deve ter sensibilidade na hora de avaliar. 
