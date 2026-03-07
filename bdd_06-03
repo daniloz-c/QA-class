@@ -1,0 +1,49 @@
+Com base em uma rotina de CRUD de usuários (incluindo a função
+Login) em um sistema Web simples, faça o BDD das rotinas do
+sistema (CRUD + Login).
+Salve separadamente no repositório. (Anote também os princípios
+de teste)
+
+BDD – Sistema Web (CRUD de Usuários + Login)
+Login com sucesso
+
+Dado que o usuário está na tela de login.
+Quando o usuário digita o usuário dele no campo usuário e digite também sua senha no campo senha, depois clicando no botão em enviar.
+Então o front-end deve enviar essas informações de usuário e senha para o backend que irá validar se esse usuário e senha existe e depois se aprovado, entrar no sistema.
+
+Login com senha incorreta
+
+Dado que o usuário está na tela de login.
+Quando o usuário digita o usuário dele no campo usuário e digita uma senha incorreta no campo senha e depois clica no botão enviar.
+Então o sistema deve informar que o usuário ou senha estão incorretos e não permitir o acesso ao sistema.
+
+Login com campos vazios
+
+Dado que o usuário está na tela de login.
+Quando o usuário tenta clicar no botão enviar sem preencher os campos de usuário ou senha.
+Então o sistema deve informar que os campos precisam ser preenchidos antes de enviar.
+
+CRUD de Usuários
+Criar usuário
+
+Dado que o administrador está na tela de cadastro de usuários.
+Quando o administrador preenche os campos necessários como nome, usuário e senha e depois clica no botão salvar.
+Então o sistema deve enviar essas informações para o backend e cadastrar um novo usuário no banco de dados.
+
+Listar usuários
+
+Dado que o administrador está na tela de listagem de usuários.
+Quando o sistema carrega a página de usuários.
+Então o sistema deve consultar o backend e mostrar a lista de usuários cadastrados.
+
+Atualizar usuário
+
+Dado que o administrador está na tela de edição de um usuário.
+Quando o administrador altera alguma informação do usuário e clica no botão salvar.
+Então o sistema deve enviar essas novas informações para o backend e atualizar os dados do usuário no banco de dados.
+
+Deletar usuário
+
+Dado que o administrador está na tela de listagem de usuários.
+Quando o administrador seleciona um usuário e clica no botão excluir.
+Então o sistema deve enviar a requisição para o backend e remover esse usuário do banco de dados.
