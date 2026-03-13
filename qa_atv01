@@ -1,0 +1,151 @@
+Qualidade e Teste de Software
+
+1. Erro, Defeito e Falha
+Erro é um problema humano que se resultou em destino incorreto, por exemplo: um dev fazer um código sem lógica for idade > 18.
+
+Defeito é a inconsistência resultada da má lógica do programador.
+
+Falha é o comportamento inesperado após a implementação do sistema, devia fazer por que a regra de negócio solicitou mas não foi implementada corretamente.
+exemplo: Um usuário de 18 anos tenta se cadastrar e o sistema diz que ele não pode, mesmo sendo permitido pela regra de negócio.
+
+2. Níveis de Teste
+- Teste de Componentes (Unitário)
+Testa uma pequena parte do sistema exemplo uma função:
+Exemplo:
+Função que valida senha:
+def senha_valida(senha):
+    return len(senha) >= 8
+
+- Teste de Integração
+Testa a comunicação entre dois componentes do sistema.
+Exemplo:
+Sistema de login + banco de dados.
+Fluxo testado:
+Usuário digita login
+
+Sistema consulta banco
+
+Sistema valida senha
+
+- Testa o sistema completo funcionando.
+Testa o sistema completo funcionando.
+Fluxo completo de cadastro:
+* usuário acessa cadastro
+
+* preenche formulário
+* sistema salva no banco
+
+* sistema envia email de confirmação
+
+- Teste de Aceite
+Testa se o sistema atende o que o cliente pediu.
+Exemplo:
+Cliente pediu:
+
+O sistema deve permitir login com email.
+
+Exemplo:
+usuário entra com email ✔
+
+usuário entra com senha ✔
+
+sistema autentica corretamente ✔
+
+Usuário confirma que o sistema atende o requisito.
+
+
+
+3. Tipos de Teste
+- Teste Funcional
+Testa as funcionalidades do sistema.
+Exemplo:
+
+* Testar o login:
+
+login correto → acesso permitido
+
+senha errada → acesso negado
+
+- Teste Não Funcional
+Testa características do sistema.
+
+Exemplos:
+
+* desempenho
+
+* segurança
+
+* usabilidade
+
+Teste de performance:
+
+1000 usuários tentando login ao mesmo tempo.
+
+
+- Teste Relacionado à Mudança
+Executado quando algo foi alterado.
+
+Exemplo:
+
+* Sistema mudou a regra de senha:
+
+Antes:
+
+mínimo 6 caracteres
+
+Agora:
+
+mínimo 8 caracteres
+
+Testes devem garantir que a nova regra funcione.
+
+
+
+
+4. Técnicas de Teste
+   - Caixa preta
+Tester não vê o código, apenas entradas e saídas.
+
+* Particionamento de Equivalência
+Divide valores em grupos.
+Campo idade aceita 18 a 60
+
+Exemplo
+Testes:
+15 (inválido)
+30 (válido)
+70 (inválido)
+
+
+   - Caixa branca
+* Cobertura de Instruções
+Testa se todas as linhas do código são executadas.
+
+Exemplo:
+if idade >= 18:
+    print("Maior de idade")
+print("Fim")
+
+* Cobertura de Decisão
+Testa todos os caminhos possíveis.
+
+Exemplo:
+if saldo >= valor:
+Testes:
+
+* saldo suficiente
+* saldo insuficiente
+
+   - Baseadas na experiência
+* Suposição de Erro
+Tester imagina onde erros podem acontecer.
+
+Exemplo:
+
+Campo de login:
+
+deixar vazio
+
+colocar espaços
+
+colocar caracteres especiais
