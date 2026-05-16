@@ -1,0 +1,105 @@
+Exercício:
+
+============Cenário 1: Interrupção Temporária do Serviço devido a Manutenção Programada======================
+O serviço é temporariamente interrompido para
+realizar manutenção programada, afetando
+temporariamente a acessibilidade, mas sem danos
+permanentes
+
+Risco: Interrupção do acesso ao sistema durante manutenção preventiva
+Probabilidade: D
+Impacto: 2
+Matriz do Risco: D2 - Médio
+
+Testes utilizados: Teste de disponibilidade, Teste de monitoramento, Teste de infraestrutura
+
+Estratégia de mitigação: Implementar balanceamento de carga e monitoramento ativo durante a manutenção.
+
+Tipos de Risco
+
+Técnico: Serviços dependentes podem parar durante atualizações.
+Humano: Falta de comunicação pode causar confusão nos usuários.
+Negócio: Impacto temporário na experiência do usuário.
+
+================Cenário 2: Vulnerabilidade de Segurança Descoberta em uma Dependência de Terceiros====================
+Uma vulnerabilidade crítica é descoberta em uma
+biblioteca de terceiros usada pelo aplicativo,
+permitindo ataques de hackers para acessar dados
+sensíveis dos usuários
+
+Risco: Exploração de vulnerabilidade em biblioteca externa
+Probabilidade: C
+Impacto: 5
+Matriz do Risco: C5 - Crítico
+
+Testes utilizados: Teste de segurança, Pentest, Análise de vulnerabilidade
+
+Estratégia de mitigação: Atualizar dependências regularmente e monitorar CVEs.
+
+Tipos de Risco
+
+Técnico: Falhas de segurança em bibliotecas externas.
+Humano: Desenvolvedores podem não acompanhar atualizações de segurança.
+Negócio: Vazamento de dados e danos à reputação da empresa.
+
+===================Cenário 3: Erro de Interface do Usuário que Causa Confusão entre os Usuários====================
+Uma alteração na interface do usuário causa
+confusão entre os usuários, mas não afeta a
+funcionalidade básica do aplicativo.
+
+Risco: Mudança de layout causando dificuldade de navegação
+Probabilidade: C
+Impacto: 2
+Matriz do Risco: C2 - Médio
+
+Testes utilizados: Teste A/B, Teste de usabilidade, Teste de interface
+
+Estratégia de mitigação: Manter padrões de design e validar mudanças com usuários.
+
+Tipos de Risco
+
+Técnico: Elementos mal posicionados ou inconsistentes.
+Humano: Usuários podem cometer erros durante o uso do sistema.
+Negócio: Redução na satisfação do usuário.
+
+===================Cenário 4: Falha em Processo de Backup de Dados==================
+Uma falha no processo de backup de dados resulta
+na perda de uma quantidade significativa de dados
+dos usuários.
+
+Risco: Falha na replicação de dados de backup
+Probabilidade: C
+Impacto: 5
+Matriz do Risco: C5 - Crítico
+
+Testes utilizados: Teste de restauração, Teste de continuidade de negócios
+
+Estratégia de mitigação: Implementar redundância e monitoramento de backup.
+
+Tipos de Risco
+
+Técnico: Replicação de dados falhando entre servidores.
+Humano: Falta de verificação periódica do backup.
+Negócio: Impacto significativo na continuidade da operação.
+
+====================Cenário 5: Ataque de Phishing aos Usuários do Aplicativo=====================
+O serviço é temporariamente interrompido para
+realizar manutenção programada, afetando
+temporariamente a acessibilidade, mas sem danos
+permanentes.
+
+Risco: Roubo de credenciais por engenharia social
+Probabilidade: C
+Impacto: 4
+Matriz do Risco: C4 - Alto
+
+Testes utilizados: Auditoria de segurança, Simulação de phishing
+
+Estratégia de mitigação: Implementar políticas de segurança e autenticação multifator.
+
+Tipos de Risco
+
+Técnico: Falta de proteção contra login suspeito.
+Humano: Usuários podem cair em golpes digitais.
+Negócio: Acesso indevido ao sistema.
+
